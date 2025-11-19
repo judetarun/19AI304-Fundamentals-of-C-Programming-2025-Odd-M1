@@ -26,7 +26,27 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    float pi = 3.14;
+    char grade = 'A';
+    char name[] = "John";
+
+    printf("Integer Literal: %d\n", num);
+    printf("Float Literal: %.2f\n", pi);
+    printf("Character Literal: %c\n", grade);
+    printf("String Literal: %s\n", name);
+
+    return 0;
+}
+
+```
 # Output:
+<img width="461" height="134" alt="image" src="https://github.com/user-attachments/assets/045f4886-257b-4e47-a5b6-0efc9c832a61" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +77,21 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+#define PI 3.14159
+
+int main() {
+    const int DAYS = 7;
+    printf("Macro Constant PI: %f\n", PI);
+    printf("Constant Variable DAYS: %d\n", DAYS);
+    return 0;
+}
+
+```
 # Output:
+<img width="622" height="86" alt="image" src="https://github.com/user-attachments/assets/8483616c-0050-4b36-931d-f1ac1b49d3f9" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +115,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    float b = 3.14f;
+    double c = 20.12345;
+    char d = 'X';
+
+    printf("Integer value: %d\n", a);
+    printf("Float value: %.2f\n", b);
+    printf("Double value: %.5lf\n", c);
+    printf("Character value: %c\n", d);
+
+    return 0;
+}
+
+```
 # Output:
+<img width="499" height="132" alt="image" src="https://github.com/user-attachments/assets/b7d5fa68-afc2-4cf4-a6ee-3ffe65e99851" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +174,40 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\nArithmetic Operations:\n");
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+    if(b != 0) {
+        printf("Division: %d\n", a / b);
+        printf("Remainder: %d\n", a % b);
+    }
+
+    printf("\nBitwise Operations:\n");
+    printf("AND: %d\n", a & b);
+    printf("OR: %d\n", a | b);
+    printf("XOR: %d\n", a ^ b);
+    printf("Left Shift (a << 1): %d\n", a << 1);
+    printf("Right Shift (a >> 1): %d\n", a >> 1);
+    printf("NOT of a: %d\n", ~a);
+
+    return 0;
+}
+
+```
 # Output:
+<img width="527" height="378" alt="image" src="https://github.com/user-attachments/assets/db04a36a-1954-4cb5-82d5-fce832db4157" />
+<img width="453" height="222" alt="image" src="https://github.com/user-attachments/assets/3b7efea5-c3c7-45d8-b840-d3204f53f296" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +252,30 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+     ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') ?
+        printf("Vowel") :
+    ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) ?
+        printf("Consonant") :
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit") :
+        printf("Special Symbol");
+
+    return 0;
+}
+
+```
 # Output:
+<img width="421" height="192" alt="image" src="https://github.com/user-attachments/assets/ad049161-e431-48ff-90bf-339e1775a375" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
